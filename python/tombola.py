@@ -4,5 +4,11 @@ import random
 
 list = ["Duffy Duck","Bart Simpson","Bender Bending Rodríguez","Gabriel García Márquez","Massimo Banzi","J. Johna Jameson"];
 random.shuffle(list)
-for i in range(0,5):
+text = ""
+for i in range(0,3):
     print list[i]
+    text+=str("- " + list[i] + "\n")
+
+f = open("result.md", 'w+')
+f.write(text)
+f.close()
