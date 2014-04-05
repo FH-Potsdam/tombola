@@ -1,1 +1,5 @@
 .DS_Store
+_private/
+nodejs/node_modules/
+result.txt
+result.md
